@@ -1,3 +1,4 @@
+import SectionCases from "./components/SectionCases";
 import SectionProducts from "./components/SectionProducts";
 import SectionTop from "./components/SectionTop";
 import Header from "./components/header/Header";
@@ -10,6 +11,7 @@ function App() {
       <main className="main">
         <SectionTop/>
         <SectionProducts/>
+        <SectionCases/>
       </main>
     </div>
   );
