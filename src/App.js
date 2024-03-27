@@ -2,6 +2,7 @@ import SectionCases from "./components/SectionCases";
 import SectionFeatures from "./components/SectionFeatures";
 import SectionProducts from "./components/SectionProducts";
 import SectionQuestions from "./components/SectionQuestions";
+import SectionTestimonials from "./components/SectionTestimonials";
 import SectionTop from "./components/SectionTop";
 import Header from "./components/header/Header";
 
@@ -16,6 +17,7 @@ function App() {
         <SectionCases/>
         <SectionFeatures/>
         <SectionQuestions/>
+        <SectionTestimonials/>
       </main>
     </div>
   );

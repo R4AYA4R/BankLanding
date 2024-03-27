@@ -479,9 +479,10 @@ a{
   position: relative;
   max-height: 760px;
   overflow: hidden;
+  transition:all 1s ease;
 }
 .sectionQuestions__blocks--active{
-  max-height: none;
+  max-height: 1400px;
   margin-bottom: 20px;
 }
 .sectionQuestions__blocks-inner{
@@ -526,7 +527,6 @@ a{
 }
 .sectionQuestion__blocks-gradientBlock{
   opacity: 0;
-  transition:all .5s ease;
 }
 .sectionQuestion__blocks-gradientBlock--active{
   height: 275px;
@@ -536,4 +536,93 @@ a{
   left: 0;
   bottom: 0;
   opacity: 1;
+  transition:all 1s ease;
+}
+.sectionTestimonials{
+  padding-bottom: 150px;
+}
+.swiper {
+  max-width: 100%;
+  height: 322px;
+  position: relative;
+  z-index: 1;
+}
+.swiperSlide__topline-border{
+  width: 152px;
+  height: 1px;
+  background-color: #262626;
+}
+.swiperSlide__inner{
+  padding: 0 10px;
+  text-align: center;
+}
+.swiperSlide__topline{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.swiperSlide__text{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 404px;
+}
+.swiperSlide__textContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.swiperSlide__subtext{
+  font-size: 18px;
+  font-weight: 400;
+  color:#CAFF33;
+}
+.slider__navigation{
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+.slider__navigation-prev{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom:130px;
+  padding: 14px;
+  border-radius: 100px;
+  background-color: #1C1C1C;
+}
+.slider__navigation-next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom:130px;
+  padding: 14px;
+  border-radius: 100px;
+  background-color: #1C1C1C;
+}
+.slider__gradientBlock1{
+  height: 340px;
+  width: 556px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background:linear-gradient(to left,rgba(25,25,25,0),rgba(25,25,25,1) );
+  z-index: 2;
+}
+.slider__gradientBlock2{
+  height: 340px;
+  width: 556px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background:linear-gradient(to right,rgba(25,25,25,0),rgba(25,25,25,1) );
+  z-index: 2;
 }
