@@ -1,5 +1,7 @@
+import Footer from "./components/Footer";
 import SectionCases from "./components/SectionCases";
 import SectionFeatures from "./components/SectionFeatures";
+import SectionJourney from "./components/SectionJourney";
 import SectionProducts from "./components/SectionProducts";
 import SectionQuestions from "./components/SectionQuestions";
 import SectionTestimonials from "./components/SectionTestimonials";
@@ -18,7 +20,9 @@ function App() {
         <SectionFeatures/>
         <SectionQuestions/>
         <SectionTestimonials/>
+        <SectionJourney/>
       </main>
+      <Footer/>
     </div>
   );
 }

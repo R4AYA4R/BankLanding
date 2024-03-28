@@ -596,6 +596,7 @@ a{
   padding: 14px;
   border-radius: 100px;
   background-color: #1C1C1C;
+  cursor:pointer;
 }
 .slider__navigation-next{
   display: flex;
@@ -607,6 +608,7 @@ a{
   padding: 14px;
   border-radius: 100px;
   background-color: #1C1C1C;
+  cursor:pointer;
 }
 .slider__gradientBlock1{
   height: 340px;
@@ -625,4 +627,105 @@ a{
   bottom: 0;
   background:linear-gradient(to right,rgba(25,25,25,0),rgba(25,25,25,1) );
   z-index: 2;
+}
+.sectionJourney{
+  padding-bottom: 150px;
+}
+.sectionJourney__inner{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: space-between;
+  border-radius: 20px;
+  border:1px solid rgba(202,255,51,0.1);
+  padding: 80px;
+  background-color: #1C1C1C;
+  position: relative;
+}
+.sectionJourney__inner::after{
+  content:'';
+  width: 298px;
+  height: 283px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('./../public/images/sectionCases/Abstract\ Design.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sectionJourney__info{
+  max-width: 1103px;
+}
+.sectionJourney__info-title{
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.sectionJourney__info-desc{
+  font-size: 18px;
+  font-weight: 300;
+  color:#B3B3B3;
+}
+.sectionJourney__divLink .info__link{
+  font-size: 18px;
+  font-weight: 400;
+  padding: 18px 30px;
+}
+.footer{
+  padding: 100px 0 50px;
+  background-color: #1C1C1C;
+}
+.footer__topline{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.footer__topline-contacts{
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 50px 0;
+  border-top:1px solid #262626;
+  border-bottom:1px solid #262626;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+.contacts__email, .contacts__tel, .contacts__location{
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.footer__bottomline{
+  background-color: #1A1A1A;
+  padding:16px 30px 10px 16px;
+  border-radius: 100px;
+  border:1px solid #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__bottomline-images{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.footer__bottomline-text{
+  color:#B3B3B3;
+  font-size: 18px;
+  font-weight: 300;
+}
+.footer__bottomline-subBlock{
+  display: flex;
+  gap: 12px;
+  color:#B3B3B3;
+  font-size: 18px;
+  font-weight: 300;
+}
+.subBlock__desc{
+  padding-left: 12px;
+  border-left:1px solid #B3B3B3;
 }

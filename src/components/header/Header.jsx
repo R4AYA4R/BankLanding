@@ -6,7 +6,7 @@ const Header=()=>{
                 <div className={cl.header__inner}>
                     <a href="#" className={cl.logo}>
                         <img src="/images/header/shape-30.png" alt="" className={cl.logo__img} />
-                        <p className={cl.logo__text}>MBank</p>
+                        <p className={cl.logo__text}>YourBank</p>
                     </a>
                     <ul className={cl.header__menu}>
                         <li className="header__menu-item">
