@@ -3,10 +3,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { useRef } from 'react';
+import { useIsOnScreen } from '../hooks/useIsOnScreen';
 
 const SectionTestimonials = () => {
+    const testimonialsRef=useRef();
+    const onScreen=useIsOnScreen(testimonialsRef);
     return (
-        <section className="sectionTestimonials">
+        <section id="testimonials" ref={testimonialsRef} className={onScreen.testimonialsIntersecting ? 'sectionTestimonials sectionTestimonials--active' : 'sectionTestimonials'}>
             <div className="container">
                 <div className="secitonTestimonials__inner">
                     <div className="sectionProducts__info">

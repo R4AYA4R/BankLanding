@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useIsOnScreen } from "../hooks/useIsOnScreen";
 
 const SectionQuestions=()=>{
     const [activeText,setActiveText]=useState(false);
+    const questionsRef=useRef();
+    const onScreen=useIsOnScreen(questionsRef);
     return(
-        <section className="sectionQuestions">
+        <section id="questions" ref={questionsRef} className={onScreen.questionsIntersecting ? 'sectionQuestions sectionQuestions--active' : 'sectionQuestions'}>
             <div className="container">
                 <div className="sectionQuestions__inner">
                     <h1 className="sectionQuestions__title"><span className="info__title-span">Frequently</span> Asked Questions</h1>

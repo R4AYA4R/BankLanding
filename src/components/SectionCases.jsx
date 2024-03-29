@@ -1,8 +1,13 @@
+import { useRef } from "react";
+import { useIsOnScreen } from "../hooks/useIsOnScreen";
+
 const SectionCases = () => {
+    const casesRef = useRef();
+    const onScreen = useIsOnScreen(casesRef);
     return (
-        <section className="sectionCases">
+        <section id="cases" ref={casesRef} className="sectionCases">
             <div className="container">
-                <div className="sectionCases__inner">
+                <div className={onScreen.casesIntersecting ? 'sectionCases__inner sectionCases__inner--active' : 'sectionCases__inner'}>
                     <h1 className="sectionCases__title">Use Cases</h1>
                     <p className="sectionCases__desc">At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions</p>
                     <div className="sectionCases__IndividualsBlock">

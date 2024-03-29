@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import TabBanking from "./TabBanking";
 import TabFinance from "./TabFinance";
 import TabCustomer from "./TabCustomer";
+import { useIsOnScreen } from "../hooks/useIsOnScreen";
 
 const SectionFeatures = () => {
     const [tab, setTab] = useState('banking');
+    const feautersRef=useRef();
+    const onScreen=useIsOnScreen(feautersRef);
     return (
-        <section className="sectionFeatures">
+        <section id="features" ref={feautersRef} className={onScreen.featuresIntersecting ? 'sectionFeatures sectionFeatures--active' : 'sectionFeatures'}>
             <div className="container">
                 <div className="sectionFeatures__inner">
                     <h1 className="sectionFeatures__title">Our <span className="info__title-span">Features</span></h1>
