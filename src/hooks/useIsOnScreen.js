@@ -9,6 +9,7 @@ export const useIsOnScreen=(ref)=>{
         questionsIntersecting:false,
         testimonialsIntersecting:false,
         topIntersecting:false,
+        excellenceIntersecting:false,
     });
 
     const callback=(entries,observer)=>{
@@ -36,6 +37,10 @@ export const useIsOnScreen=(ref)=>{
                 }
                 if(entry.target.id == 'top'){
                     setIsIntersectingNow((prev)=>({...prev,topIntersecting:true}));
+                    observer.unobserve(entry.target);
+                }
+                if(entry.target.id == 'excellence'){
+                    setIsIntersectingNow((prev)=>({...prev,excellenceIntersecting:true}));
                     observer.unobserve(entry.target);
                 }
             }

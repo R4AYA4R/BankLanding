@@ -1,29 +1,23 @@
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
-import SectionCases from "./components/SectionCases";
-import SectionFeatures from "./components/SectionFeatures";
-import SectionJourney from "./components/SectionJourney";
-import SectionProducts from "./components/SectionProducts";
-import SectionQuestions from "./components/SectionQuestions";
-import SectionTestimonials from "./components/SectionTestimonials";
-import SectionTop from "./components/SectionTop";
 import Header from "./components/header/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import ScrollToTop from "./utils/scrollToTop";
 
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+      <ScrollToTop/>
       <Header/>
-      <main className="main">
-        <SectionTop/>
-        <SectionProducts/>
-        <SectionCases/>
-        <SectionFeatures/>
-        <SectionQuestions/>
-        <SectionTestimonials/>
-        <SectionJourney/>
-      </main>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/*' element={<Navigate to='/'/>}/>
+      </Routes>
       <Footer/>
-    </div>
+    </BrowserRouter>
   );
 }
 

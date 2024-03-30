@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import cl from './header/Header.module.css';
 const Footer = () => {
     return (
@@ -5,19 +6,19 @@ const Footer = () => {
             <div className="container">
                 <div className="footer__inner">
                     <div className="footer__topline">
-                        <a href="#" className={cl.logo}>
+                        <Link to="/" className={cl.logo}>
                             <img src="/images/header/shape-30.png" alt="" className={cl.logo__img} />
                             <p className={cl.logo__text}>YourBank</p>
-                        </a>
+                        </Link>
                         <ul className={cl.header__menu}>
                             <li className="header__menu-item">
-                                <a href="#" className={cl.footer__link}>Home</a>
+                                <Link to="/" className={cl.footer__link}>Home</Link>
                             </li>
                             <li className="header__menu-item">
                                 <a href="#" className={cl.footer__link}>Careers</a>
                             </li>
                             <li className="header__menu-item">
-                                <a href="#" className={cl.footer__link}>About</a>
+                                <Link to="/about" className={cl.footer__link}>About</Link>
                             </li>
                         </ul>
                         <div className="footer__topline-contacts">

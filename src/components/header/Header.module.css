@@ -36,4 +36,23 @@
     color:#E4E4E7;
     font-size: 18px;
     font-weight: 400;
+    transition:opacity .5s ease;
+}
+.footer__link:hover{
+    opacity: 0.8;
+}
+.menu__link{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 400;
+    transition:all .3s linear;
+}
+.menu__link:hover{
+    opacity: 0.8;
+}
+.menu__linkActive{
+    background-color: #262626;
+    padding: 12px 24px;
+    color:#fff;
+    border-radius: 82px;
 }
