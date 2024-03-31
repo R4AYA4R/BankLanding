@@ -834,3 +834,74 @@ a{
   top: 0;
   right: 0;
 }
+.sectionMission{
+  padding-bottom: 150px;
+  opacity: 0;
+  transform:translateY(-10%);  transition:all 1s ease;
+}
+.sectionMission--active{
+  transform:translateY(0);
+  opacity: 1;
+}
+.sectionMission__title{
+  color:#CAFF33;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.sectionMission__desc{
+  color:#B3B3B3;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 80px;
+}
+.info__topline{
+  display: flex;
+  align-items: center;
+}
+.info__bottomline-imgContainer{
+  padding: 60px 60px 0 60px;
+  background-color: #262626;
+  border-radius: 50px 50px 20px 20px;
+  position: relative;
+}
+.info__bottomline-img{
+  position: relative;
+  z-index: 2;
+}
+.info__bottomline-imgContainer::after{
+  content:'';
+  width: 634px;
+  height: 602px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-image: url('./../public/images/sectionMission/Abstract Design.png');
+  background-repeat: no-repeat;
+  left: 31px;
+}
+.info__topline-text{
+  border-left: 1px solid #CAFF33;
+  padding-left: 50px;
+}
+.info__topline-title{
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.info__topline-desc{
+  font-size: 18px;
+  font-weight: 300;
+  color:#B3B3B3;
+}
+.info__bottomline{
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  top:-100px;
+}
+.info__bottomline-text{
+  padding-right: 50px;
+  border-right: 1px solid #CAFF33;
+}
