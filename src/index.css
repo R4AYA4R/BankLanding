@@ -837,10 +837,10 @@ a{
 .sectionMission{
   padding-bottom: 150px;
   opacity: 0;
-  transform:translateY(-10%);  transition:all 1s ease;
+  transform:translateX(-30%);  transition:all 1s ease;
 }
 .sectionMission--active{
-  transform:translateY(0);
+  transform:translateX(0);
   opacity: 1;
 }
 .sectionMission__title{
