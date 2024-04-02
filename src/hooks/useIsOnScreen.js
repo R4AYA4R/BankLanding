@@ -11,6 +11,7 @@ export const useIsOnScreen=(ref)=>{
         topIntersecting:false,
         excellenceIntersecting:false,
         missionIntersecting:false,
+        releaseIntersecting:false,
     });
 
     const callback=(entries,observer)=>{
@@ -46,6 +47,10 @@ export const useIsOnScreen=(ref)=>{
                 }
                 if(entry.target.id === 'mission'){
                     setIsIntersectingNow((prev)=>({...prev,missionIntersecting:true}));
+                    observer.unobserve(entry.target);
+                }
+                if(entry.target.id === 'release'){
+                    setIsIntersectingNow((prev)=>({...prev,releaseIntersecting:true}));
                     observer.unobserve(entry.target);
                 }
             }
