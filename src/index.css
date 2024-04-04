@@ -974,3 +974,124 @@ a{
   font-size: 18px;
   font-weight: 300;
 }
+
+@media (max-width:1810px){
+  .sectionTop__moneyBlock::before{
+    display: none;
+  }
+}
+@media (max-width:1440px){
+  .sectionTop__inner{
+    gap:100px;
+  }
+  .info__title{
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .transactions__img{
+    max-width: 355px;
+  }
+  .sectionTop__currency{
+    bottom: -100px;
+  }
+  .sectionTop{
+    transition:all 1s ease;
+  }
+}
+@media (max-width:1050px){
+  .sectionTop__moneyBlock{
+    max-width: 400px;
+  }
+  .transactions__img{
+    max-width: 285px;
+  }
+  .info__title{
+    font-size: 38px;
+  }
+}
+@media (max-width:855px){
+  .sectionTop__inner{
+    flex-direction: column;
+  }
+  .sectionTop__moneyBlock{
+    align-self:center;
+  }
+  .currency__images-img{
+    max-width: 30px;
+  }
+  .sectionTop__currency{
+    right:0;
+  }
+  .transactions__img{
+    width: 100%;
+  }
+} 
+@media (max-width:620px){
+  .sectionTop__income{
+    text-wrap: nowrap;
+    font-size: 13px;
+    margin-left: 50px
+  }
+  .income__info-text{
+    font-size: 13px;
+  }
+  .income__img{
+    max-width: 25px;
+  }
+  .sectionTop__currency{
+    margin-left: 50px;
+    text-wrap: nowrap;
+  }
+  .currency__text{
+    font-size: 13px;
+  }
+  .currency__images-img{
+    max-width: 22px;
+  }
+  .sectionTop__moneyBlock{
+    font-size: 15px;
+  }
+  .moneyBlock__link{
+    font-size: 13px;
+  }
+  .info__title{
+    font-size: 28px;
+  }
+  .info__desc{
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  .info__link{
+    padding: 12px 16px;
+    font-size: 15px;
+  }
+  .sectionTop{
+    padding: 50px 0 150px;
+  }
+  .subdiv__text{
+    font-size: 15px;
+  }
+  .sectionTop__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width:450px){
+  .sectionTop__moneyBlock{
+    width: 100%;
+    font-size: 13px;
+    padding: 12px;
+  }
+  .sectionTop__income{
+    top: -60px;
+  }
+  .subdiv__text{
+    font-size: 13px;
+  }
+  .sectionTop__currency{
+    right: -10px;
+  }
+}
