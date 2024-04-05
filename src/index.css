@@ -998,6 +998,40 @@ a{
   .sectionTop{
     transition:all 1s ease;
   }
+  .sectionProducts{
+    font-size: 15px;
+    transition:all 1s ease-in-out;
+  }
+  .sectionCases__inner{
+    transition:all 1s ease;
+  }
+  .sectionProducts__btnInfo{
+    text-wrap: nowrap;
+  }
+  .IndividualsBlock__images{
+    padding: 40px;
+  }
+  .sectionCases__IndividualsBlock{
+    gap: 60px;
+  }
+  .IndividualsBlock__images-item{
+    padding: 24px;
+  }
+  .percentsBlock__item1{
+    padding-right: 20px;
+  }
+  .percentsBlock__item2{
+    padding: 0 20px;
+  }
+  .percentsBlock__item3{
+    padding-left: 20px;
+  }
+  .IndividualsBlock__images-text{
+    font-size: 15px;
+  }
+  .percentsBlock__item-percents{
+    font-size: 48px;
+  }
 }
 @media (max-width:1050px){
   .sectionTop__moneyBlock{
@@ -1008,6 +1042,42 @@ a{
   }
   .info__title{
     font-size: 38px;
+  }
+  .blocks__item3{
+    padding-left: 40px;
+  }
+  .blocks__item2{
+    padding: 0 40px;
+  }
+  .blocks__item1{
+    padding-right: 40px;
+  }
+  .sectionCases__IndividualsBlock{
+    grid-template-columns:1fr;
+  }
+  .IndividualsBlock__info-percentsBlock{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .percentsBlock__item2{
+    border:none;
+    padding: 0 0 60px 0;
+  }
+  .percentsBlock__item1{
+    padding: 0 0 60px 0;
+  }
+  .percentsBlock__item3{
+    padding: 0;
+  }
+  .IndividualsBlock__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .IndividualsBlock__info-text{
+    text-align: center;
   }
 }
 @media (max-width:855px){
@@ -1025,6 +1095,48 @@ a{
   }
   .transactions__img{
     width: 100%;
+  }
+  .sectionProducts__blocks{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .blocks__item1{
+    padding: 0;
+  }
+  .blocks__item2{
+    margin: 30px 0;
+    padding: 30px 0;
+    border-top:1px solid #262626;
+    border-bottom:1px solid #262626;
+    border-left:none;
+    border-right:none;
+  }
+  .blocks__item3{
+    padding: 0;
+  }
+  .blocks__item-img{
+    margin-bottom: 20px;
+  }
+  .blocks__item-title{
+    margin-bottom: 12px;
+    padding: 0;
+    border:none;
+  }
+  .blocks__item-desc{
+    text-align: center;
+  }
+  .sectionProducts__info-title{
+    font-size: 38px;
+  }
+  .sectionProducts__btnInfo{
+    padding: 8px;
+  }
+  .btnInfo__text1{
+    padding: 10px;
+  }
+  .btnInfo__text2{
+    padding: 10px;
   }
 } 
 @media (max-width:620px){
@@ -1078,6 +1190,52 @@ a{
     align-items: center;
     text-align: center;
   }
+  .sectionProducts{
+    padding-bottom: 75px;
+  }
+  .sectionProducts__info{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .sectionProducts__btnInfo{
+    align-self: center;
+    margin-top: 20px;
+  }
+  .sectionCases{
+    padding-bottom: 75px;
+  }
+  .sectionCases__desc{
+    margin-bottom: 60px;
+  }
+  .sectionCases__IndividualsBlock{
+    gap: 30px;
+  }
+  .IndividualsBlock__images{
+    padding: 20px;
+  }
+  .IndividualsBlock__info{
+    padding: 15px 0;
+  }
+  .IndividualsBlock__info-text{
+    margin-bottom: 50px;
+  }
+  .IndividualsBlock__info-percentsBlock{
+    margin-bottom: 50px;
+  }
+  .sectionCases__BusinessBlockMargin{
+    margin-top: 30px;
+  }
+  .IndividualsBlock__images{
+    order:-1;
+  }
+  .sectionCases__title{
+    text-align: center;
+  }
+  .sectionCases__desc{
+    text-align: center;
+  }
 }
 @media (max-width:450px){
   .sectionTop__moneyBlock{
@@ -1093,5 +1251,38 @@ a{
   }
   .sectionTop__currency{
     right: -10px;
+  }
+  .sectionProducts__info-title{
+    font-size: 32px;
+  }
+  .sectionCases__title{
+    font-size: 32px;
+  }
+  .IndividualsBlock__images-item{
+    padding: 10px;
+  }
+  .sectionCases__desc{
+    font-size: 15px;
+  }
+  .IndividualsBlock__info-title{
+    font-size: 20px;
+  }
+  .IndividualsBlock__info-text{
+    font-size: 15px;
+  }
+  .percentsBlock__item-percents{
+    font-size: 40px;
+  }
+  
+}
+@media (max-width:380px){
+  .IndividualsBlock__images{
+    padding: 10px;
+  }
+  .IndividualsBlock__images-img{
+    max-width: 70px;
+  }
+  .IndividualsBlock__images-text{
+    font-size: 12px;
   }
 }
