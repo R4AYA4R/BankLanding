@@ -442,9 +442,10 @@ a{
   border-radius: 100px;
   border:1px solid #262626;
   font-family: "Lexend", sans-serif;
-  text-align-last: left;
+  text-align: left;
   cursor:pointer;
   transition:all .8s ease;
+  text-wrap:nowrap;
 }
 .blocks__tabs-btn--active{
   color:#CAFF33;
@@ -975,6 +976,17 @@ a{
   font-weight: 300;
 }
 
+@keyframes animForTabs {
+  0%{
+    opacity: 0;
+    transform:translateX(-20%);
+  }
+  100%{
+    opacity: 1;
+    transform:translateX(0);
+  }
+}
+
 @media (max-width:1810px){
   .sectionTop__moneyBlock::before{
     display: none;
@@ -1005,6 +1017,9 @@ a{
   .sectionCases__inner{
     transition:all 1s ease;
   }
+  .sectionFeatures{
+    transition:all 1s ease;
+  }
   .sectionProducts__btnInfo{
     text-wrap: nowrap;
   }
@@ -1031,6 +1046,59 @@ a{
   }
   .percentsBlock__item-percents{
     font-size: 48px;
+  }
+  .blocks__info{
+    gap:20px;
+  }
+  .sectionFeatures__blocks{
+    gap: 20px;
+  }
+  .blocks__info-item{
+    padding: 40px;
+  }
+  .blocks__tabs{
+    padding: 40px;
+  }
+  .info__item-title{
+    font-size: 18px;
+  }
+  .info__item-desc{
+    font-size: 16px;
+  }
+  .sectionQuestions__text{
+    margin-bottom: 60px;
+    font-size: 16px;
+  }
+  .sectionQuestions__title{
+    font-size: 38px;
+  }
+  .sectionQuestions__blocks-inner{
+    gap:20px;
+    grid-template-columns: 1fr;
+  }
+  .sectionQuestions__blocks-item{
+    padding:30px;
+  }
+  .sectionQuestion__blocks-gradientBlock--active{
+    height: 250px;
+  }
+  .blocks__item-desc{
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .blocks__item-title{
+    text-wrap: nowrap;
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .sectionQuestions__btn{
+    padding: 14px 18px;
+    font-family: "Lexend",sans-serif;
+    font-size: 15px;
+  }
+  .sectionQuestions__blocks--active{
+    max-height: 1600px;
   }
 }
 @media (max-width:1050px){
@@ -1079,6 +1147,28 @@ a{
   .IndividualsBlock__info-text{
     text-align: center;
   }
+  .sectionFeatures__blocks{
+    flex-direction: column;
+  }
+  .blocks__tabs{
+    flex-direction: row;
+  }
+  .blocks__info--active{
+    animation: animForTabs 1s ease forwards;
+  }
+  .blocks__item-title{
+    border:none;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .sectionQuestions .blocks__item-desc{
+    border-top:1px solid #262626;
+    margin-top: 0;
+    padding-top: 15px;
+  }
+  /* .sectionQuestion .blocks__item-desc{
+    text-align: left;
+  } */
 }
 @media (max-width:855px){
   .sectionTop__inner{
@@ -1123,7 +1213,7 @@ a{
     padding: 0;
     border:none;
   }
-  .blocks__item-desc{
+  .sectionProducts .blocks__item-desc{
     text-align: center;
   }
   .sectionProducts__info-title{
@@ -1137,6 +1227,27 @@ a{
   }
   .btnInfo__text2{
     padding: 10px;
+  }
+  .sectionCases__title{
+    font-size: 38px;
+  }
+  .info__item-img{
+    max-width: 25px;
+  }
+  .info__item-title{
+    font-size: 15px;
+  }
+  .info__item-desc{
+    font-size: 15px;
+  }
+  .sectionFeatures__title{
+    font-size: 38px;
+  }
+  .sectionQuestions__blocks--active{
+    max-height: 1700px;
+  }
+  .sectionQuestions__blocks-item{
+    padding: 20px;
   }
 } 
 @media (max-width:620px){
@@ -1236,6 +1347,56 @@ a{
   .sectionCases__desc{
     text-align: center;
   }
+  .sectionFeatures__text{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 16px;
+  }
+  .sectionFeatures__title{
+    text-align: center;
+  }
+  .blocks__tabs{
+    padding: 20px;
+  }
+  .sectionFeatures{
+    padding-bottom: 75px;
+  }
+  .blocks__info{
+    grid-template-columns: 1fr;
+  }
+  .blocks__info-item{
+    padding: 30px;
+  }
+  .info__item-blockImg{
+    margin-bottom: 20px;
+  }
+  .blocks__tabs-btn{
+    padding: 15px;
+    font-size: 12px;
+  }
+  .blocks__tabs{
+    gap: 10px;
+  }
+  .sectionQuestions__title{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .sectionQuestions__text{
+    text-align: center;
+  }
+  .sectionQuestions__text{
+    margin-bottom: 50px;
+  }
+  .sectionQuestions .blocks__item-desc{
+    font-size: 16px;
+  }
+  .sectionQuestions .blocks__item-title{
+    text-wrap: wrap;
+  }
+  .sectionQuestions__blocks--active{
+    max-height: 2100px;
+  }
 }
 @media (max-width:450px){
   .sectionTop__moneyBlock{
@@ -1273,7 +1434,25 @@ a{
   .percentsBlock__item-percents{
     font-size: 40px;
   }
-  
+  .blocks__tabs-btn{
+    text-align: center;
+    text-wrap: wrap;
+  }
+  .sectionQuestions__blocks--active{
+    max-height: 2800px;
+  }
+  .sectionQuestions .blocks__item-desc{
+    font-size: 15px;
+  }
+  .sectionQuestions__title{
+    font-size: 28px;
+  }
+  .sectionQuestions__text{
+    font-size: 14px;
+  }
+  .sectionQuestions__btn{
+    font-size: 14px;
+  }
 }
 @media (max-width:380px){
   .IndividualsBlock__images{
