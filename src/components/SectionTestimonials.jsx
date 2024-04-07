@@ -27,12 +27,20 @@ const SectionTestimonials = () => {
                         <Swiper
                             modules={[Navigation]}
                             slidesPerView={3}
-                            spaceBetween={10}
+                            spaceBetween={5}
                             navigation={{
                                 prevEl: '.slider__navigation-prev',
                                 nextEl: '.slider__navigation-next'
                             }}
                             loop={true}
+                            breakpoints={{
+                                320:{
+                                    slidesPerView:1
+                                },
+                                620:{
+                                    slidesPerView:3
+                                }
+                            }}
                         >
                             <SwiperSlide>
                                 <div className="swiperSlide__inner">
