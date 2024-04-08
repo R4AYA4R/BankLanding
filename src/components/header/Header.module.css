@@ -56,8 +56,123 @@
     color:#fff;
     border-radius: 82px;
 }
+.header__menuMobile{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 50px;
+    transform:translateX(100%);
+    transition:all .8s ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    height: 50vh;
+    width: 51%;
+    opacity: 0;
+    border-radius: 12px;
+}
+.header__menuBtn{
+    display: none;
+}
 @media (max-width:1440px){
     .footer__link{
         font-size: 16px;
+    }
+}
+@media (max-width:855px){
+    .header::after{
+        width: 250px;
+        height: 300px;
+        top: -50px;
+        background-position: left top;
+    }
+    .menu__link{
+        font-size: 16px;
+    }
+}
+@media (max-width:620px){
+    .header__menu{
+        display: none;
+    }
+    .header__menuMobileActive{
+        transform:translateX(0);
+        opacity: 1;
+    }
+    .header__inner{
+        border:1px solid #262626;
+        padding: 20px;
+    }
+    .header__menuBtn{
+        display: block;
+        width: 52px;
+        height: 40px;
+        background-color: #CAFF33;
+        border-radius: 82px;
+        border:none;
+        padding: 9px 15px;
+        position: relative;
+        z-index: 5;
+        cursor:pointer;
+    }
+    .menuBtn__span{
+        width: 21px;
+        height: 1px;
+        background-color: #333333;
+        border-radius: 20%;
+        position: absolute;
+        right: 15px;
+        transition:transform .5s ease;
+    }
+    .menuBtn__span:nth-child(1){
+        top:10px;
+    }
+    .menuBtn__span:nth-child(2){
+        top:18px;
+    }
+    .menuBtn__span:nth-child(3){
+        top:18px;
+    }
+    .menuBtn__span:nth-child(4){
+        top:25px;
+        width: 12px;
+    }
+    .menu__link{
+        font-size: 14px;
+    }
+    .menu__linkActive{
+        padding: 12px 16px;
+    }
+    .menuBtn__spanActive1{
+        transform: scaleX(0);
+    }
+    .menuBtn__spanActive2{
+        transform: rotate(45deg);
+    }
+    .menuBtn__spanActive3{
+        transform: rotate(-45deg);
+    }
+    .logo__img{
+        max-width: 30px;
+    }
+}
+@media (max-width:450px){
+    .header__menuBtn{
+        width: 52px;
+        height: 37px;
+    }
+    .logo__text{
+        font-size: 16px;
+    }
+    .menu__linkActive{
+        padding: 8px 12px 9px;
+    }
+    .logo__img{
+        max-width: 25px;
     }
 }
