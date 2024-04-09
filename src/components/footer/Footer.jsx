@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
-import cl from './header/Header.module.css';
-import logoImg from "./header/shape-30.png";
+import cl from './../header/Header.module.css';
+import logoImg from "./../header/shape-30.png";
+import btn1 from "./Button (1).png";
+import btn2 from "./Button (2).png";
+import btn from "./Button.png";
+import icon from "./Icon.png";
+import icon1 from "./Icon (1).png";
+import icon2 from "./Icon (2).png";
 const Footer = () => {
     return (
         <footer className="footer">
@@ -24,15 +30,15 @@ const Footer = () => {
                         </ul>
                         <div className="footer__topline-contacts">
                             <a href="#" className="contacts__email">
-                                <img src="./BankLanding/images/footer/Icon.png" alt="" className="contacts__email-img" />
+                                <img src={icon} alt="" className="contacts__email-img" />
                                 <p className="contacts__email-text">hello@skillbirdge.com</p>
                             </a>
                             <a href="#" className="contacts__tel">
-                                <img src="./BankLanding/images/footer/Icon (1).png" alt="" className="contacts__tel-img" />
+                                <img src={icon1} alt="" className="contacts__tel-img" />
                                 <p className="contacts__tel-text">+91 91813 23 2309</p>
                             </a>
                             <a href="#" className="contacts__location">
-                                <img src="./BankLanding/images/footer/Icon (2).png" alt="" className="contacts__location-img" />
+                                <img src={icon2} alt="" className="contacts__location-img" />
                                 <p className="contacts__location-text">Somewhere in the World</p>
                             </a>
                         </div>
@@ -40,13 +46,13 @@ const Footer = () => {
                     <div className="footer__bottomline">
                         <div className="footer__bottomline-images">
                             <a href="" className="footer__bottomline-link">
-                                <img src="./BankLanding/images/footer/Button.png" alt="" className="footer__bottomline-img" />
+                                <img src={btn} alt="" className="footer__bottomline-img" />
                             </a>
                             <a href="" className="footer__bottomline-link">
-                                <img src="./BankLanding/images/footer/Button (1).png" alt="" className="footer__bottomline-img" />
+                                <img src={btn1} alt="" className="footer__bottomline-img" />
                             </a>
                             <a href="" className="footer__bottomline-link">
-                                <img src="./BankLanding/images/footer/Button (2).png" alt="" className="footer__bottomline-img" />
+                                <img src={btn2} alt="" className="footer__bottomline-img" />
                             </a>
                         </div>
                         <p className="footer__bottomline-text">YourBank All Rights Reserved</p>
