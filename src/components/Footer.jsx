@@ -10,7 +10,7 @@ const Footer = () => {
                             <img src="/images/header/shape-30.png" alt="" className={cl.logo__img} />
                             <p className={cl.logo__text}>YourBank</p>
                         </Link>
-                        <ul className={cl.header__menu}>
+                        <ul className={cl.footer__menu}>
                             <li className="header__menu-item">
                                 <Link to="/" className={cl.footer__link}>Home</Link>
                             </li>

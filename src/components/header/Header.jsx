@@ -24,13 +24,13 @@ const Header = () => {
                     </ul>
                     <ul className={isActiveMenu ? `${cl.header__menuMobile} ${cl.header__menuMobileActive}` : cl.header__menuMobile}>
                         <li className="header__menu-item">
-                            <NavLink to="/" className={({ isActive }) => isActive ? `${cl.menu__link} ${cl.menu__linkActive}` : cl.menu__link} onClick={()=>setIsActiveMenu(false)}>Home</NavLink>
+                            <NavLink to="/" className={({ isActive }) => isActive ? `${cl.menu__link} ${cl.menu__linkActive}` : cl.menu__link} onClick={() => setIsActiveMenu(false)}>Home</NavLink>
                         </li>
                         <li className="header__menu-item">
                             <a href="#" className={cl.menu__link}>Careers</a>
                         </li>
                         <li className="header__menu-item">
-                            <NavLink to="/about" className={({ isActive }) => isActive ? `${cl.menu__link} ${cl.menu__linkActive}` : cl.menu__link} onClick={()=>setIsActiveMenu(false)}>About</NavLink>
+                            <NavLink to="/about" className={({ isActive }) => isActive ? `${cl.menu__link} ${cl.menu__linkActive}` : cl.menu__link} onClick={() => setIsActiveMenu(false)}>About</NavLink>
                         </li>
                     </ul>
                     <button className={cl.header__menuBtn} onClick={() => setIsActiveMenu((prev) => !prev)}>
@@ -41,7 +41,7 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-        </header>
+        </header >
     )
 }
 export default Header;

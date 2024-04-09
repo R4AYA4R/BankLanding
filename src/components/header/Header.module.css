@@ -32,6 +32,11 @@
     align-items: center;
     gap: 26px;
 }
+.footer__menu{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
 .footer__link{
     color:#E4E4E7;
     font-size: 18px;

@@ -948,6 +948,7 @@ a{
 .sectionRelease__item-img{
   border-radius: 35px 35px 14px 14px;
   margin-bottom: 51px;
+  width: 100%;
 }
 .sectionRelease__item-title{
   font-size: 24px;
@@ -1154,6 +1155,81 @@ a{
     width: 150px;
     height: 140px;
   }
+  .sectionExcellence__inner{
+    padding: 40px 40px 167px 40px;
+  }
+  .sectionExcellence__img{
+    max-height: 568px;
+    max-width: 700px;
+  }
+  .sectionExcellence__inner::after{
+    height: 317px;
+    width: 340px;
+  }
+  .sectionMission__title{
+    font-size: 42px;
+  }
+  .sectionMission__desc{
+    margin-bottom: 60px;
+  }
+  .sectionMission .info__topline-title{
+    font-size: 32px;
+  }
+  .info__bottomline{
+    top:0;
+    margin-top: 30px;
+  }
+  .info__bottomline-imgContainer{
+    padding: 30px 30px 0 30px;
+  }
+  .info__bottomline-img{
+    max-width: 420px;
+  }
+  .info__bottomline-imgContainer::after{
+    max-width: 465px;
+    height: 480px;
+    left: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  .sectionMission .info__topline-text{
+    padding-left: 30px;
+  }
+  .sectionMission .info__bottomline-text{
+    padding-right: 30px;
+  }
+  .sectionRelease__title{
+    font-size: 42px;
+  }
+  .sectionRelease__desc{
+    margin-bottom: 60px;
+  }
+  .sectionRelease__item-title{
+    font-size: 18px;
+  }
+  .sectionRelease__item-desc{
+    font-size: 16px;
+  }
+  .sectionRelease__info-item{
+    padding: 25px;
+  }
+  .sectionRelease__item-location, .sectionRelease__item-date{
+    padding: 6px 14px;
+  }
+  .item__location-text,
+  .item__date-text{
+    font-size: 16px;
+  }
+  .sectionMission,
+  .sectionRelease,
+  .sectionExcellence,
+  .sectionCases,
+  .sectionFeatures,
+  .sectionQuestions,
+  .sectionTestimonials,
+  .sectionJourney{
+    padding-bottom: 120px;
+  }
 }
 @media (max-width:1050px){
   .sectionTop__moneyBlock{
@@ -1250,6 +1326,52 @@ a{
   }
   .footer{
     padding: 40px 60px 20px;
+  }
+  .sectionMission__inner{
+    text-align: center;
+  }
+  .sectionMission .info__topline{
+    flex-direction: column;
+  }
+  .sectionMission .info__bottomline{
+    flex-direction: column;
+  }
+  .sectionMission .info__bottomline-text{
+    border:none;
+    padding: 0;
+  }
+  .sectionMission .info__topline-text{
+    border:none;
+    padding: 0;
+  }
+  .info__bottomline-imgContainer{
+    border-bottom:1px solid #CAFF33;
+    border-radius: 50px 50px 0 0;
+    margin-bottom: 30px;
+    order:-1;
+  }
+  .info__bottomline-imgContainer::after{
+    height: 450px;
+  }
+  .sectionMission .info__bottomline{
+    margin-top: 60px;
+  }
+  .sectionRelease__info{
+    grid-template-columns:1fr;
+  }
+  .sectionRelease__item-img{
+    border-radius: 45px 45px 17px 17px;
+  }
+  .sectionRelease__title,
+  .sectionRelease__desc{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .sectionRelease__desc{
+    font-size: 16px;
+  }
+  .sectionRelease__info{
+    gap: 20px;
   }
 }
 @media (max-width:855px){
@@ -1392,6 +1514,36 @@ a{
   }
   .footer__topline-contacts{
     flex-wrap: wrap;
+  }
+  .sectionExcellence__secondInner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionExcellence__img{
+    position: relative;
+    top: 30px;
+    order:-1;
+    width: 100%;
+  }
+  .sectionExcellence__info{
+    border-radius: 20px;
+    padding: 30px 10px;
+  }
+  .sectionExcellence__inner{
+    padding: 20px;
+  } 
+  
+  .sectionExcellence__inner::after{
+    height: 217px;
+    width: 240px;
+  }
+  .info__bottomline-img{
+    max-width: 350px;
+  }
+  .info__bottomline-imgContainer::after{
+    max-width: 390px;
+    height: 380px;
   }
 } 
 @media (max-width:620px){
@@ -1606,6 +1758,49 @@ a{
   .footer__topline-contacts{
     padding: 30px 0;
   }
+  .sectionExcellence__info{
+    padding: 20px;
+    text-align: center;
+  }
+  .sectionExcellence .info__text{
+    font-size: 16px;
+  }
+  .sectionExcellence__img{
+    top: 10px;
+  }
+  .sectionExcellence{
+    padding-bottom: 75px;
+  }
+  .sectionExcellence .info__subtitle{
+    margin-bottom: 10px;
+  }
+  .sectionMission{
+    padding-bottom: 75px;
+  }
+  .sectionMission__title{
+    font-size: 32px;
+  }
+  .sectionMission .info__topline-title{
+    font-size: 24px;
+  }
+  .sectionMission .info__topline-desc,
+  .sectionMission__desc{
+    font-size: 16px;
+  }
+  .info__bottomline-img{
+    max-width: 300px;
+  }
+  .info__bottomline-imgContainer::after{
+    max-width: 335px;
+    height: 345px;
+    left: 13px;
+  }
+  .sectionRelease{
+    padding-bottom: 75px;
+  }
+  .sectionRelease__item-img{
+    border-radius: 30px 30px 12px 12px;
+  }
 }
 @media (max-width:450px){
   .sectionTop__moneyBlock{
@@ -1696,6 +1891,60 @@ a{
   .footer__bottomline{
     padding: 50px 12px 12px;
   }
+  .sectionExcellence .info__text{
+    font-size: 14px;
+  }
+  .sectionExcellence .info__title{
+    font-size: 22px;
+  }
+  .sectionExcellence .info__subtitle{
+    font-size: 16px;
+  }
+  .sectionExcellence__inner{
+    padding: 10px;
+  }
+  .sectionMission .info__topline-desc, .sectionMission__desc{
+    font-size: 14px;
+  }
+  .sectionMission__desc{
+    margin-bottom: 30px;
+  }
+  .sectionMission .info__bottomline{
+    margin-top: 30px;
+  }
+  .info__bottomline-img{
+    max-width: 250px;
+  }
+  .info__bottomline-imgContainer::after{
+    max-width: 275px;
+    height: 280px;
+    left: 7px;
+  }
+  .info__bottomline-imgContainer{
+    padding: 20px 20px 0 20px;
+  }
+  .sectionRelease__item-img{
+    margin-bottom: 30px;
+  }
+  .sectionRelease__info-item{
+    padding: 20px;
+  }
+  .item__location-text, 
+  .item__date-text{
+    font-size: 14px;
+  }
+  .sectionRelease__item-title{
+    font-size: 16px;
+  }
+  .sectionRelease__item-desc{
+    font-size: 14px;
+  }
+  .sectionRelease__title{
+    font-size: 32px;
+  }
+  .sectionRelease__desc{
+    font-size: 14px;
+  }
 }
 @media (max-width:380px){
   .IndividualsBlock__images{
@@ -1706,5 +1955,10 @@ a{
   }
   .IndividualsBlock__images-text{
     font-size: 12px;
+  }
+  .item__location-text,
+  .item__date-text{
+    font-size: 12px;
+    text-align: center;
   }
 }
