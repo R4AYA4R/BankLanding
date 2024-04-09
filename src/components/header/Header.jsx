@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import cl from './Header.module.css';
 import { useState } from 'react';
-import logoImg from "./../../../public/images/header/shape-30.png";
+import logoImg from "./shape-30.png";
 const Header = () => {
     const [isActiveMenu, setIsActiveMenu] = useState(false);
     return (

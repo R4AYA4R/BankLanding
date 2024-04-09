@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import cl from './header/Header.module.css';
-import logoImg from "./../../../public/images/header/shape-30.png";
+import logoImg from "./header/shape-30.png";
 const Footer = () => {
     return (
         <footer className="footer">
