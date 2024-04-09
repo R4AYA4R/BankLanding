@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/BankLanding/static/css/main.0f08f2af.css",
+    "main.js": "/BankLanding/static/js/main.f14bd60d.js",
+    "static/js/453.73e18de4.chunk.js": "/BankLanding/static/js/453.73e18de4.chunk.js",
+    "static/media/Abstract Design.png": "/BankLanding/static/media/Abstract Design.55e8588c0338b6da33c9.png",
+    "static/media/Abstract Design (1).png": "/BankLanding/static/media/Abstract Design (1).1de2672a7255e8fe4050.png",
+    "index.html": "/BankLanding/index.html",
+    "main.0f08f2af.css.map": "/BankLanding/static/css/main.0f08f2af.css.map",
+    "main.f14bd60d.js.map": "/BankLanding/static/js/main.f14bd60d.js.map",
+    "453.73e18de4.chunk.js.map": "/BankLanding/static/js/453.73e18de4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f08f2af.css",
+    "static/js/main.f14bd60d.js"
+  ]
+}
