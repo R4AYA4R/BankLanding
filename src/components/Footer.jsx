@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import cl from './header/Header.module.css';
+import logoImg from "./../../../public/images/header/shape-30.png";
 const Footer = () => {
     return (
         <footer className="footer">
@@ -7,7 +8,7 @@ const Footer = () => {
                 <div className="footer__inner">
                     <div className="footer__topline">
                         <Link to="/" className={cl.logo}>
-                            <img src="./BankLanding/images/header/shape-30.png" alt="" className={cl.logo__img} />
+                            <img src={logoImg} alt="" className={cl.logo__img} />
                             <p className={cl.logo__text}>YourBank</p>
                         </Link>
                         <ul className={cl.footer__menu}>

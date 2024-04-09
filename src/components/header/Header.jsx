@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import cl from './Header.module.css';
 import { useState } from 'react';
+import logoImg from "./../../../public/images/header/shape-30.png";
 const Header = () => {
     const [isActiveMenu, setIsActiveMenu] = useState(false);
     return (
@@ -8,7 +9,7 @@ const Header = () => {
             <div className="container">
                 <div className={cl.header__inner}>
                     <NavLink to="/" className={cl.logo}>
-                        <img src="./BankLanding/images/header/shape-30.png" alt="" className={cl.logo__img} />
+                        <img src={logoImg} alt="" className={cl.logo__img} />
                         <p className={cl.logo__text}>YourBank</p>
                     </NavLink>
                     <ul className={cl.header__menu}>
