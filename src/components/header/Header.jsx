@@ -8,7 +8,7 @@ const Header = () => {
             <div className="container">
                 <div className={cl.header__inner}>
                     <NavLink to="/" className={cl.logo}>
-                        <img src="/BankLanding/images/header/shape-30.png" alt="" className={cl.logo__img} />
+                        <img src="./BankLanding/images/header/shape-30.png" alt="" className={cl.logo__img} />
                         <p className={cl.logo__text}>YourBank</p>
                     </NavLink>
                     <ul className={cl.header__menu}>
