@@ -46,7 +46,7 @@ const SectionTestimonials = () => {
                                 <div className="swiperSlide__inner">
                                     <div className="swiperSlide__topline">
                                         <div className="swiperSlide__topline-border"></div>
-                                        <img src="/images/sectionTestimonials/Icon.png" alt="" className="swiperSlide__topline-img" />
+                                        <img src="BankLanding/images/sectionTestimonials/Icon.png" alt="" className="swiperSlide__topline-img" />
                                         <div className="swiperSlide__topline-border"></div>
                                     </div>
                                     <div className="swiperSlide__textContent">
@@ -59,7 +59,7 @@ const SectionTestimonials = () => {
                                 <div className="swiperSlide__inner">
                                     <div className="swiperSlide__topline">
                                         <div className="swiperSlide__topline-border"></div>
-                                        <img src="/images/sectionTestimonials/Icon.png" alt="" className="swiperSlide__topline-img" />
+                                        <img src="BankLanding/images/sectionTestimonials/Icon.png" alt="" className="swiperSlide__topline-img" />
                                         <div className="swiperSlide__topline-border"></div>
                                     </div>
                                     <div className="swiperSlide__textContent">
@@ -72,7 +72,7 @@ const SectionTestimonials = () => {
                                 <div className="swiperSlide__inner">
                                     <div className="swiperSlide__topline">
                                         <div className="swiperSlide__topline-border"></div>
-                                        <img src="/images/sectionTestimonials/Icon.png" alt="" className="swiperSlide__topline-img" />
+                                        <img src="BankLanding/images/sectionTestimonials/Icon.png" alt="" className="swiperSlide__topline-img" />
                                         <div className="swiperSlide__topline-border"></div>
                                     </div>
                                     <div className="swiperSlide__textContent">
@@ -85,7 +85,7 @@ const SectionTestimonials = () => {
                                 <div className="swiperSlide__inner">
                                     <div className="swiperSlide__topline">
                                         <div className="swiperSlide__topline-border"></div>
-                                        <img src="/images/sectionTestimonials/Icon.png" alt="" className="swiperSlide__topline-img" />
+                                        <img src="BankLanding/images/sectionTestimonials/Icon.png" alt="" className="swiperSlide__topline-img" />
                                         <div className="swiperSlide__topline-border"></div>
                                     </div>
                                     <div className="swiperSlide__textContent">
@@ -96,10 +96,10 @@ const SectionTestimonials = () => {
                             </SwiperSlide>
                             <div className="slider__navigation">
                                 <div className="slider__navigation-prev">
-                                    <img src="/images/sectionTestimonials/Icon (2).png" alt="" className="navigation__prev-img" />
+                                    <img src="BankLanding/images/sectionTestimonials/Icon (2).png" alt="" className="navigation__prev-img" />
                                 </div>
                                 <div className="slider__navigation-next">
-                                    <img src="/images/sectionTestimonials/Icon (1).png" alt="" className="navigation__prev-img" />
+                                    <img src="BankLanding/images/sectionTestimonials/Icon (1).png" alt="" className="navigation__prev-img" />
                                 </div>
                             </div>
                             <div className="slider__gradientBlock1"></div>

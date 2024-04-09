@@ -13,19 +13,19 @@ const SectionCases = () => {
                     <div className="sectionCases__IndividualsBlock">
                         <div className="IndividualsBlock__images individuals__after">
                             <div className="IndividualsBlock__images-item">
-                                <img src="/images/sectionCases/Icon Container.png" alt="" className="IndividualsBlock__images-img" />
+                                <img src="BankLanding/images/sectionCases/Icon Container.png" alt="" className="IndividualsBlock__images-img" />
                                 <p className="IndividualsBlock__images-text">Managing Personal Finances</p>
                             </div>
                             <div className="IndividualsBlock__images-item">
-                                <img src="/images/sectionCases/Icon Container (1).png" alt="" className="IndividualsBlock__images-img" />
+                                <img src="BankLanding/images/sectionCases/Icon Container (1).png" alt="" className="IndividualsBlock__images-img" />
                                 <p className="IndividualsBlock__images-text">Saving for the Future</p>
                             </div>
                             <div className="IndividualsBlock__images-item">
-                                <img src="/images/sectionCases/Icon Container (2).png" alt="" className="IndividualsBlock__images-img" />
+                                <img src="BankLanding/images/sectionCases/Icon Container (2).png" alt="" className="IndividualsBlock__images-img" />
                                 <p className="IndividualsBlock__images-text">Homeownership</p>
                             </div>
                             <div className="IndividualsBlock__images-item">
-                                <img src="/images/sectionCases/Icon Container (3).png" alt="" className="IndividualsBlock__images-img" />
+                                <img src="BankLanding/images/sectionCases/Icon Container (3).png" alt="" className="IndividualsBlock__images-img" />
                                 <p className="IndividualsBlock__images-text">Education Funding</p>
                             </div>
                         </div>
@@ -71,19 +71,19 @@ const SectionCases = () => {
                         </div>
                         <div className="IndividualsBlock__images business__after">
                             <div className="IndividualsBlock__images-item">
-                                <img src="/images/sectionCases/Icon Container (4).png" alt="" className="IndividualsBlock__images-img" />
+                                <img src="BankLanding/images/sectionCases/Icon Container (4).png" alt="" className="IndividualsBlock__images-img" />
                                 <p className="IndividualsBlock__images-text">Startups and Entrepreneurs</p>
                             </div>
                             <div className="IndividualsBlock__images-item">
-                                <img src="/images/sectionCases/Icon Container (5).png" alt="" className="IndividualsBlock__images-img" />
+                                <img src="BankLanding/images/sectionCases/Icon Container (5).png" alt="" className="IndividualsBlock__images-img" />
                                 <p className="IndividualsBlock__images-text">Cash Flow Management</p>
                             </div>
                             <div className="IndividualsBlock__images-item">
-                                <img src="/images/sectionCases/Icon Container (6).png" alt="" className="IndividualsBlock__images-img" />
+                                <img src="BankLanding/images/sectionCases/Icon Container (6).png" alt="" className="IndividualsBlock__images-img" />
                                 <p className="IndividualsBlock__images-text">Business Expansion</p>
                             </div>
                             <div className="IndividualsBlock__images-item">
-                                <img src="/images/sectionCases/Icon Container (7).png" alt="" className="IndividualsBlock__images-img" />
+                                <img src="BankLanding/images/sectionCases/Icon Container (7).png" alt="" className="IndividualsBlock__images-img" />
                                 <p className="IndividualsBlock__images-text">Payment Solutions</p>
                             </div>
                         </div>

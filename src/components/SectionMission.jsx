@@ -13,7 +13,7 @@ const SectionMission=()=>{
                     <div className="sectionMission__info">
                         <div className="info__topline">
                             <div className="info__bottomline-imgContainer">
-                                <img src="/images/sectionMission/Image.png" alt="" className="info__bottomline-img" />
+                                <img src="BankLanding/images/sectionMission/Image.png" alt="" className="info__bottomline-img" />
                             </div>
                             <div className="info__topline-text">
                                 <p className="info__topline-title">Mission</p>
@@ -26,7 +26,7 @@ const SectionMission=()=>{
                                 <p className="info__topline-desc">Our vision at YourBank is to redefine banking by creating a seamless and personalized experience for our customers. We envision a future where banking is accessible, transparent, and tailored to individual preferences. Through continuous innovation and collaboration, we strive to be at the forefront of the industry, setting new standards for customer-centric banking. Our vision is to be the preferred financial institution, known for our unwavering commitment to excellence, trust, and customer satisfaction.</p>
                             </div>
                             <div className="info__bottomline-imgContainer">
-                                <img src="/images/sectionMission/Image (1).png" alt="" className="info__bottomline-img" />
+                                <img src="BankLanding/images/sectionMission/Image (1).png" alt="" className="info__bottomline-img" />
                             </div>
                         </div>
                     </div>
