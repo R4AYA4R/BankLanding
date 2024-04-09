@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,body{
+  overflow-x:hidden;
+}
 body{
   background-color: #1A1A1A;
   color:#fff;
@@ -12,7 +15,6 @@ body{
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  overflow-x:hidden;
 }
 ul{
   list-style: none;
