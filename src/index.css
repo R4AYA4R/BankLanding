@@ -32,7 +32,7 @@ a{
   padding: 100px 0 250px;
   opacity: 0;
   transform:translateX(-50%);
-  transition:all 2s ease;
+  transition:all 1s ease;
 }
 .sectionTop--active{
   opacity: 1;
@@ -205,7 +205,7 @@ a{
 .sectionProducts{
   padding-bottom:150px;
   opacity: 0;
-  transition:all 2s ease;
+  transition:all 1s ease;
   transform:translateX(-70%);
 }
 .sectionProducts--active{
@@ -289,7 +289,7 @@ a{
 .sectionCases__inner{
   opacity: 0;
   transform:translateX(70%);
-  transition:all 2s ease;
+  transition:all 1s ease;
 }
 .sectionCases__inner--active{
   opacity: 1;
@@ -405,7 +405,7 @@ a{
   padding-bottom: 150px;
   opacity: 0;
   transform:translateY(-15%);
-  transition:all 2s ease;
+  transition:all 1s ease;
 }
 .sectionFeatures--active{
   opacity: 1;
@@ -584,7 +584,7 @@ a{
   padding-bottom: 150px;
   opacity: 0;
   transform:translateX(-50%);
-  transition:all 2s ease;
+  transition:all 1s ease;
 }
 .sectionTestimonials--active{
   opacity: 1;
@@ -666,6 +666,7 @@ a{
   left: 0;
   bottom: 0;
   background:linear-gradient(to left,rgba(25,25,25,0),rgba(25,25,25,1) );
+  background:-moz-linear-gradient(to right,rgba(25,25,25,0),rgba(25,25,25,1) );
   z-index: 2;
 }
 .slider__gradientBlock2{
@@ -675,6 +676,7 @@ a{
   right: 0;
   bottom: 0;
   background:linear-gradient(to right,rgba(25,25,25,0),rgba(25,25,25,1) );
+  background:-moz-linear-gradient(to right,rgba(25,25,25,0),rgba(25,25,25,1) );
   z-index: 2;
 }
 .sectionJourney{
@@ -843,7 +845,8 @@ a{
 .sectionMission{
   padding-bottom: 150px;
   opacity: 0;
-  transform:translateX(-30%);  transition:all 1s ease;
+  transform:translateX(-30%);
+  transition:all 1s ease;
 }
 .sectionMission--active{
   transform:translateX(0);
