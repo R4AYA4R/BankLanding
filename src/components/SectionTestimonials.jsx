@@ -7,8 +7,8 @@ import { useRef } from 'react';
 import { useIsOnScreen } from '../hooks/useIsOnScreen';
 
 const SectionTestimonials = () => {
-    const testimonialsRef=useRef();
-    const onScreen=useIsOnScreen(testimonialsRef);
+    const testimonialsRef = useRef();
+    const onScreen = useIsOnScreen(testimonialsRef);
     return (
         <section id="testimonials" ref={testimonialsRef} className={onScreen.testimonialsIntersecting ? 'sectionTestimonials sectionTestimonials--active' : 'sectionTestimonials'}>
             <div className="container">
@@ -34,11 +34,11 @@ const SectionTestimonials = () => {
                             }}
                             loop={true}
                             breakpoints={{
-                                320:{
-                                    slidesPerView:1
+                                320: {
+                                    slidesPerView: 1
                                 },
-                                620:{
-                                    slidesPerView:3
+                                855: {
+                                    slidesPerView: 3
                                 }
                             }}
                         >
@@ -102,8 +102,6 @@ const SectionTestimonials = () => {
                                     <img src="BankLanding/images/sectionTestimonials/Icon (1).png" alt="" className="navigation__prev-img" />
                                 </div>
                             </div>
-                            <div className="slider__gradientBlock1"></div>
-                            <div className="slider__gradientBlock2"></div>
                         </Swiper>
                     </div>
                 </div>
